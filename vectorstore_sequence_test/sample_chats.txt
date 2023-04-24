@@ -1,0 +1,16 @@
+Akshay (2023-04-20 20:00:00): Hey, when will UPI Autopay be ready?
+Nitish (2023-04-20 20:01:00): It will take a few weeks, so will be available to test by 15th May. And if all goes well we can push it to production by 21st May.
+Akshay (2023-04-20 20:02:00): That's too late. Is it possible to launch it by 15th.
+Nitish (2023-04-20 20:02:15): Not really. We won't be able to test it effectively.
+Akshay (2023-04-20 20:02:30): Can we reduce the scope and launch it by 15th?
+Nitish (2023-04-20 20:03:00): Maybe we could launch it without the retries.
+Akshay (2023-04-20 20:03:10): Works. Let's do that then.
+Nitish (2023-04-20 20:03:15): Cool.
+
+
+Nitish (2023-04-23 10:00:10): Hey
+Nitish (2023-04-23 10:00:20): I don't think we will be able to release it by 15th
+Nitish (2023-04-23 10:00:40): The team spent a couple of days on some prod issues. And there are other bugs to be fixed so I don't think we will be able to release by 15th
+Akshay (2023-04-23 10:10:00): Okay. What's the new release date then?
+Nitish (2023-04-23 10:10:10): I think we can release it by 18th.
+Akshay (2023-04-23 10:10:15): cool
