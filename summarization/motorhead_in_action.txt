@@ -1,4 +1,6 @@
-Conversation through prompt:
+## Example 1
+
+Conversation through prompts:
 
 You are a chatbot having a conversation with a human.
 
@@ -14,7 +16,7 @@ Human: That's interesting.
 AI:
 
 
-What Motorhead saves:
+What Motorhead saved:
 {
     "messages": [
         {
@@ -28,4 +30,47 @@ What Motorhead saves:
     ],
     "context": "Coco requests book recommendations on books that explain how the world works. The AI recommends \"Sapiens: A Brief History of Humankind\" and \"The Structure of Scientific Revolutions,\" but Coco has read Sapiens already. The AI then recommends \"Guns, Germs, and Steel: The Fates of Human Societies,\" which Coco plans to read. Coco asks for another recommendation similar to it, and the AI suggests \"The Better Angels of Our Nature\" by Steven Pinker, which looks at the history of violence and argues that we are actually living in the most peaceful era in human history. Coco finds it interesting.",
     "tokens": 1705
+}
+
+
+## Example 2 (Loss of information in the summary)
+
+Conversation through prompts:
+
+You are a chatbot having a conversation with a human.
+
+Human: Could you please recommend a trek for me? It should be near Mumbai
+AI: Sure, there are many great trekking options near Mumbai. One of the most popular is the Rajmachi trek, which offers stunning views of the Sahyadri mountains and takes you through lush green forests. Another option is the Kalsubai trek, which is the highest peak in the Sahyadri range and offers breathtaking panoramic views of the surrounding valleys. Both treks are easily accessible from Mumbai and are perfect for adventure enthusiasts.
+Human: I have done both. Couple of more options please.
+AI: Sure, you might want to try the Harishchandragad trek, which is known for its rugged terrain and ancient temples, or the Lohagad trek, which takes you through scenic trails and offers stunning views of the surrounding landscape. Another option is the Tung Fort trek, which is a relatively easy trek and offers beautiful views of the Pawna Lake. All of these treks are located near Mumbai and offer a great experience for anyone looking for adventure and natural beauty.
+Human: Is it advisable to do those treks in May?
+AI: May can be quite hot and humid in Mumbai, so it may not be the ideal time to go trekking. It's important to check the weather conditions before embarking on any trek, as heavy rainfall during the monsoon season can make the trails slippery and dangerous. If you do decide to go trekking in May, be sure to carry plenty of water and sunscreen, and wear lightweight, comfortable clothing. It's also a good idea to start early in the morning to avoid hiking during the hottest parts of the day.
+Human: What's the best season then?
+AI: The best season for trekking near Mumbai is generally between October to March, when the weather is cool and pleasant. The trails are usually dry and the skies are clear, making it easier to enjoy the scenic views. However, it's always a good idea to check the weather forecast before planning any trek, as unexpected rains or storms can occur at any time.
+Human: Thanks. Will go in November then.
+AI:
+
+
+What Motorhead saved:
+{
+    "messages": [
+        {
+            "role": "AI",
+            "content": "You're welcome! November is a great time to go trekking near Mumbai, and I'm sure you'll have a wonderful experience. Just remember to plan ahead, stay hydrated, and take necessary precautions to ensure a safe and enjoyable trip. Happy trekking!"
+        },
+        {
+            "role": "Human",
+            "content": "Thanks. Will go in November then."
+        },
+        {
+            "role": "AI",
+            "content": "The best season for trekking near Mumbai is generally between October to March, when the weather is cool and pleasant. The trails are usually dry and the skies are clear, making it easier to enjoy the scenic views. However, it's always a good idea to check the weather forecast before planning any trek, as unexpected rains or storms can occur at any time."
+        },
+        {
+            "role": "Human",
+            "content": "What's the best season then?"
+        }
+    ],
+    "context": "The human asks for trek recommendations near Mumbai. The AI suggests the popular Rajmachi trek with stunning views of Sahyadri mountains, and the Kalsubai trek, the highest peak in the Sahyadri range. The human then mentions having done both and asks for a couple more options.",
+    "tokens": 383
 }
