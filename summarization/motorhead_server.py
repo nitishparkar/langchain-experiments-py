@@ -1,6 +1,6 @@
 # Create a .env file and add "OPENAI_API_KEY=..." to it"
 # Run Motorhead parallelly
-# docker run --name motorhead -p 8080:8080 -e MOTORHEAD_PORT=8080 -e REDIS_URL='redis://redis:6379' -d ghcr.io/getmetal/motorhead:latest
+# docker run --name motorhead -p 8080:8080 -e MOTORHEAD_PORT=8080 -e REDIS_URL='redis://redis:6379' -e MOTORHEAD_LONG_TERM_MEMORY=true -e MOTORHEAD_MAX_WINDOW_SIZE=2 -e OPENAI_API_KEY='sk-...' -d ghcr.io/getmetal/motorhead:latest
 
 from pprint import pprint
 import asyncio
