@@ -41,8 +41,8 @@ llm_chain = LLMChain(llm=ChatOpenAI(model_name="gpt-3.5-turbo"),
 app = Flask(__name__)
 
 
-@app.route("/")
-def hello_world():
+@app.route("/", methods=['POST'])
+def test_server():
     message = request.json.get('message')
     if not message:
         return {'error': 'Message not provided'}, 400
